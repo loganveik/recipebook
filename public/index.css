@@ -1,0 +1,37 @@
+body{
+    background-color: turquoise;
+
+}
+.container{
+    text-align: center;
+    background-color: white;
+    border-style: solid; 
+    border-color: black; 
+    border-width: 3px;
+    /* box-shadow: 10px 10px 5px black; */
+}
+.d-block{
+    height: 300px;
+}
+#recipecreatebtn,#recipeclearbtn, #recipeupdatebtn{
+    background-color: lightseagreen;
+    color: white;
+}
+#recipecreatebtn:hover, #recipeclearbtn:hover, #recipeupdatebtn:hover{
+    background-color: yellow;
+    color: black;
+}
+#recipeviewcard{
+    background-color: wheat;
+    border-style: solid; 
+    border-color: black; 
+    border-width: 2px;
+}
+.delete{
+    color: red;
+}
+#carouselExampleIndicators{
+    border-style: solid; 
+    border-color: black; 
+    border-width: 1px;
+}
