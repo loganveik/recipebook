@@ -13,11 +13,11 @@ body{
 .d-block{
     height: 300px;
 }
-#recipecreatebtn,#recipeclearbtn, #recipeupdatebtn{
+#recipecreatebtn,#recipeclearbtn, #recipeupdatebtn, #ingredientaddbtn{
     background-color: lightseagreen;
     color: white;
 }
-#recipecreatebtn:hover, #recipeclearbtn:hover, #recipeupdatebtn:hover{
+#recipecreatebtn:hover, #recipeclearbtn:hover, #recipeupdatebtn:hover, #ingredientaddbtn:hover{
     background-color: yellow;
     color: black;
 }

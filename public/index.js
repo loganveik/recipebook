@@ -54,7 +54,9 @@ $(document).on("click", ".dataTitle", function () {
 
 // THIS UPDATES ANY RECIPE
 // this onclick function executes when u click update recipe after youve already clicked on a recipe thats being dispalyed in the div. you can update whatevrer you want, then click update and that will update the info with that _id. so its permanently changed forever.
-$(document).on("click", "#recipeupdatebtn", function () {
+$(document).on("click", "#recipeupdatebtn", function (event) {
+    event.preventDefault();
+    console.log($("#recipename").val())
     const selected = $(this);
     $.ajax({
         method: "POST",
@@ -66,6 +68,7 @@ $(document).on("click", "#recipeupdatebtn", function () {
             description: $("#recipedesc").val()
         }
     }).then(function (data) {
+        console.log("wqfwqf")
         $("#recipename").val("");
         $("#recipeingredient").val("");
         $("#recipedesc").val("");
@@ -101,3 +104,13 @@ $(document).on("click", "#recipeclearbtn", function () {
         $("#recipeview").empty();
     })
 });
+
+
+// this is the "+" button under ingredient. you click it and it adds more input fields if your recipe hads multiple ingredients
+// $(document).on("click", "#ingredientaddbtn", function () {
+//     const newIngredient = $("<input type='text' class='form-control my-1' id='recipeingredient'>");
+//     const Ingredients = $("<label for='recipeingredient'>Ingredients</label>");
+//     $(".ingredientORingredientsDIV").empty();
+//     $(".ingredientORingredientsDIV").append(Ingredients);
+//     $(".ingredientInput").append(newIngredient);
+// });
